@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Brewing your Pitaara</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+       
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="../images/form1_pic.png" alt="" class="img-fluid">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Brewing your Pitaara</h3>
+							</div>
+							<p>Please fill with your details</p>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Your Name" class="form-control" required>
+								</div>
+								<div class="form-holder">
+									<input type="email" placeholder="Your Email ID" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="tel" placeholder="Your Phone Number" class="form-control" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required>
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Relation with Recipient" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								
+								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="gender" value="male" checked> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="gender" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+                                    <label class="others">
+											<input type="radio" name="gender" value="others"> Others<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<label>
+								<b>Response Time will vary between 12-48 hours</b> 
+								</label>
+							</div>
+						</div>
+					</div>
+                </section>
+
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="../images/form2_pic.png" alt="" class="img-fluid">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Recipient's Details</h3>
+							</div>
+							<p>Please fill with recipient's info</p>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Name" class="form-control">
+								</div>
+                                <div class="form-holder">
+									<input type="text" placeholder="Favourite TV show" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+									
+								<div class="form-holder">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="gender" value="male"> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="gender" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+                                        <label class="others">
+											<input type="radio" name="gender" value="others"> Others<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+                                
+                                
+                                <div class="form-holder">
+                                
+                                	<input type="text" placeholder="Favourite Color" class="form-control">
+
+                                </div>
+                    
+                                
+								</div>
+                            
+                            <div class="form-row w-100">
+                            <script type="text/javascript">
+                                        $(function () {
+                                            $("input[name='chkOccasion']").click(function () {
+                                                if ($("#chkYes").is(":checked")) {
+                                                    $("#dvOccasion").show();
+//                                                    $("#labelchkNo").hide();
+//                                                    $("#labelchkNo2").hide();
+                                                } else {
+                                                    $("#dvOccasion").hide();
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                    <span>What's the ocassion?</span>
+                                   
+                                    <div for="chkNo" id="labelchkNo" style="margin-right: 5px;">
+                                        <input type="radio" id="chkNo" name="chkOccasion" />
+                                        Birthday
+                                    </div>
+                                    <div for="chkNo2" id="labelchkNo2" style="margin-right: 5px;">
+                                            <input type="radio"  id="chkNo2" name="chkOccasion" />
+                                            Anniversary
+                                        </div>
+                                
+                                 <div for="chkYes" style="margin-right: 5px;">
+                                        <input type="radio" id="chkYes" name="chkOccasion" />
+                                        Others
+                                    </div>
+                                <br>
+                                    <div id="dvOccasion" style="display: none" >
+                                        <input type="text" id="txtPassportNumber" placeholder="Enter Ocassion" />
+                                    </div>
+                            </div>
+             	<div class="form-row">
+								 <div class="form-holder">
+                                
+                                	<input type="text" placeholder="City for Delivery" class="form-control">
+
+                                </div>
+                            </div>	
+							</div>
+
+						
+						</div>
+                </section>
+                
+                
+                
+                
+                		<!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="../images/form3_pic.png" alt="" class="img-fluid">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Recipient's Details</h3>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Favourite Band/Singer?" class="form-control">
+								</div>
+                                <div class="form-holder">
+									<input type="text" placeholder="Describe interests in 5 words" class="form-control">
+								</div>
+							</div>
+							<div class="form-row w-100">
+							  <script type="text/javascript">
+                                        $(function () {
+                                            $("input[name='chkDrink']").click(function () {
+                                                if ($("#chkAlcohol").is(":checked")) {
+                                                    $("#dvAlcohol").show();
+//                                                   
+                                                } else {
+                                                    $("#dvAlcohol").hide();
+                                                }
+                                            });
+                                        });
+                                    </script>                                   
+                                    <div for="chkNo" id="labelchai" style="margin-right: 5px;">
+                                        <input type="radio" id="chkNo" name="chkDrink" />
+                                        Chai
+                                    </div>
+                                    <div for="chkNo2" id="labelcoffee" style="margin-right: 5px;">
+                                            <input type="radio"  id="chkNo2" name="chkDrink" />
+                                            Coffee
+                                        </div>
+                                
+                                 <div for="chkYes" style="margin-right: 5px;">
+                                        <input type="radio" id="chkAlcohol" name="chkDrink" />
+                                        Alcohol
+                                    </div>
+                                <br>
+                                    <div id="dvAlcohol" style="display: none" >
+                                        <input type="text" id="txtAlcohol" placeholder="Type of Alcohol?" />
+                                    </div>
+								</div>
+                           <div class="form-row w-100">
+                               <span>Loves to read?</span>
+							  <script type="text/javascript">
+                                        $(function () {
+                                            $("input[name='chkRead']").click(function () {
+                                                if ($("#chkReadYes").is(":checked")) {
+                                                    $("#dvRead").show();
+//                                                   
+                                                } else {
+                                                    $("#dvRead").hide();
+                                                }
+                                            });
+                                        });
+                                    </script>                                   
+                                    <div for="chkNo" style="margin-right: 5px;">
+                                        <input type="radio" id="chkReadYes" name="chkRead" />
+                                        Yes
+                                    </div>
+                                    <div for="chkNo2" style="margin-right: 5px;">
+                                            <input type="radio"  id="chkNo2" name="chkRead" />
+                                            No
+                                        </div>
+                                
+                                <br>
+                                    <div id="dvRead" style="display: none" >
+                                        <input type="text" id="txtAlcohol" placeholder="Favourite Genre?" />
+                                    </div>
+								</div>
+                            
+                             <div class="form-row w-100">
+                               <span>Loves Sports/Gyming?</span>
+							  <script type="text/javascript">
+                                        $(function () {
+                                            $("input[name='chkSport']").click(function () {
+                                                if ($("#chkSportYes").is(":checked")) {
+                                                    $("#dvSport").show();
+//                                                   
+                                                } else {
+                                                    $("#dvSport").hide();
+                                                }
+                                            });
+                                        });
+                                    </script>                                   
+                                    <div for="chkNo" style="margin-right: 5px;">
+                                        <input type="radio" id="chkSportYes" name="chkSport" />
+                                        Yes
+                                    </div>
+                                    <div for="chkNo2" style="margin-right: 5px;">
+                                            <input type="radio"  id="chkSportNo" name="chkSport" />
+                                            No
+                                        </div>
+                                
+                                <br>
+                                    <div id="dvSport" style="display: none" >
+                                        <input type="text" id="txtSport" placeholder="Favourite Sport?" />
+                                    </div>
+								</div>
+							</div>
+
+						
+						</div>
+                </section>
+
+                <!-- SECTION 4 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="../images/form4_gif.gif" alt="" class="img-fluid">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Recipient's Details</h3>
+							</div>
+							
+                               <div class="form-row">
+                            <script type="text/javascript">
+                                        $(function () {
+                                            $("input[name='chkPro']").click(function () {
+                                                if ($("#chkBlog").is(":checked")) {
+                                                    $("#dvBlog").show();
+                                                    $('#dvPro').hide()
+    
+                                                } else {
+                                                    $("#dvBlog").hide();
+                                                    $('#dvPro').show();
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                   
+                                    <div for="chkNo" id="labelchkNo" style="margin-right: 5px;">
+                                        <input type="radio" id="chkBlog" name="chkPro" />
+                                        Blogger (Travel/Make-up/Food etc?)
+                                    </div>
+                                    <div for="chkNo2" id="labelchkNo2" style="margin-right: 5px;">
+                                            <input type="radio"  id="chkNo2" name="chkPro" />
+                                            Professional (Lawyer/Teacher/Corporate etc?)
+                                        </div>
+                            
+                                    <div id="dvBlog" style="display: none" >
+                                        <input type="text" id="txtBlogger" placeholder="Blogger Category?" />
+                                    </div>
+                                   
+                                     <div id="dvPro" style="display: none" >
+                                        <input type="text" id="txtPro" placeholder="Professional Category?" />
+                                    </div>
+                            </div>
+                            <div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="" id="" placeholder="Enter any dislikes or special mentions!" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+                         
+						</div>
+					</div>
+                </section>
+            </form>
+		</div>
+   
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
